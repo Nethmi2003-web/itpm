@@ -147,58 +147,58 @@ const TEST_DATA = {
     
     {
       tcId: 'Pos_Fun_014',
-      name: 'Past tense action',
-      input: 'mama iiyee gedhara giyaa',
-      expected: 'මම ඊයේ ගෙදර ගියා',
+      name: 'Complex sentence with contrast',
+      input: 'mata mahansi. eeth mama meeting ekee innavaa.',
+      expected: 'මට මහන්සි. ඒත් මම meeting එකේ ඉන්නවා.',
       category: 'Daily language usage',
-      grammar: 'Past tense',
-      length: 'S'
+      grammar: 'Complex sentence',
+      length: 'M'
     },
     {
       tcId: 'Pos_Fun_015',
-      name: 'Future tense plan',
+      name: 'Mixed language informal narration',
       input: 'api heta kolambata yamu',
-      expected: 'අපි හෙට කොලඹට යමු',
-      category: 'Daily language usage',
-      grammar: 'Future tense',
-      length: 'S'
+      expected: 'අයියෝ! අද පුදුම traffic එකක් මම office එකට එනකොට වෙලා ගියා.',
+      category: 'Singlish + English',
+      grammar: 'Compound sentence',
+      length: 'M'
     },
     
     // Negations
     {
       tcId: 'Pos_Fun_016',
-      name: 'Simple negation',
-      input: 'mata epaa eeka',
-      expected: 'මට එපා ඒක',
+      name: 'Polite instruction',
+      input: 'please report eka balala oyaagee feedback eka mata evanna.',
+      expected: 'please report එක බලල ඔයාගේ feedback එක මට එවන්න.',
       category: 'Daily language usage',
-      grammar: 'Negation (negative form)',
-      length: 'S'
+      grammar: 'Imperative sentence',
+      length: 'M'
     },
     {
       tcId: 'Pos_Fun_017',
-      name: 'Cannot statement',
-      input: 'mata eeka karanna baee',
-      expected: 'මට ඒක කරන්න බෑ',
+      name: 'Technical failure description',
+      input: 'timeout ekak hindhaa API request eka fail unaa.',
+      expected: 'timeout එකක් හින්දා API request එක fail උනා.',
       category: 'Daily language usage',
-      grammar: 'Negation (negative form)',
-      length: 'S'
+      grammar: 'Simple sentence',
+      length: 'M'
     },
     
-    // Plural and Pronouns
+    
     {
       tcId: 'Pos_Fun_018',
-      name: 'Plural pronoun usage',
-      input: 'eyaalaa heta enavaa',
-      expected: 'එයාලා හෙට එනවා',
+      name: 'Negative interrogative question',
+      input: 'oyaa adha gamana yanna ennee naedhdha?',
+      expected: 'ඔයා අද ගමන යන්න එන්නේ නැද්ද?',
       category: 'Daily language usage',
       grammar: 'Plural form',
-      length: 'S'
+      length: 'M'
     },
     
-    // Word Combinations
+    //long input
     {
       tcId: 'Pos_Fun_019',
-      name: 'Common phrase pattern',
+      name: 'Long mixed-language narrative',
       input: 'poddak innako mama ennam',
       expected: 'පොඩ්ඩක් ඉන්නකො මම එන්නම්',
       category: 'Word combination / phrase pattern',
@@ -206,7 +206,6 @@ const TEST_DATA = {
       length: 'S'
     },
     
-    // Mixed Language
     {
       tcId: 'Pos_Fun_020',
       name: 'English brand term embedded',
@@ -282,7 +281,7 @@ const TEST_DATA = {
     {
       tcId: 'Neg_Fun_003',
       name: 'Mixed spacing issues',
-      input: 'mata     oonee  eeka',
+      input: 'mata oonee  eeka',
       expected: 'මට ඕනෑ ඒක',
       category: 'Formatting (spaces / line breaks / paragraph)',
       grammar: 'Simple sentence',
@@ -292,7 +291,7 @@ const TEST_DATA = {
       tcId: 'Neg_Fun_004',
       name: 'Line break in sentence',
       input: 'මම ගෙදර යනවා කමල්ටත් කියන්න',
-      expected: 'මම යනවම්\nගෙදර',
+      expected: 'මම යනවම් ගෙදර',
       category: 'Formatting (spaces / line breaks / paragraph)',
       grammar: 'Simple sentence',
       length: 'S'
