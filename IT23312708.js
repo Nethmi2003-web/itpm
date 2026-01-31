@@ -199,11 +199,11 @@ const TEST_DATA = {
     {
       tcId: 'Pos_Fun_019',
       name: 'Long mixed-language narrative',
-      input: 'poddak innako mama ennam',
-      expected: 'පොඩ්ඩක් ඉන්නකො මම එන්නම්',
-      category: 'Word combination / phrase pattern',
-      grammar: 'Simple sentence',
-      length: 'S'
+      input: 'iiyee office ivara velaa mama kalin gedhara yanna plan kalaa, eeth bambalapitiyee thibuna traffic eka nisaa mama gedhara yadhdhi godaak velaa giyaa. mama yanakam mata vena dheeval gaena hitha hitha kalpana kara kara giyee.',
+      expected: 'ඊයේ office ඉවර වෙලා මම කලින් ගෙදර යන්න plan කලා, ඒත් බම්බලපිටියේ තිබුන traffic එක නිසා මම ගෙදර යද්දි ගොඩාක් වෙලා ගියා. මම යනකම් මට වෙන දේවල් ගැන හිත හිත කල්පන කර කර ගියේ.',
+      category: 'Singlish + English',
+      grammar: 'Compound sentence',
+      length: 'L'
     },
     
     {
