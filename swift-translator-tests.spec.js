@@ -21,133 +21,130 @@ const TEST_DATA = {
     // Simple Sentences
     {
       tcId: 'Pos_Fun_001',
-      name: 'Simple present tense statement',
-      input: 'mama iskoolee inna',
-      expected: 'මම ඉස්කෝලේ ඉන්න',
-      category: 'Daily language usage',
-      grammar: 'Simple sentence',
+      name: 'Polite interrogative request',
+      input: 'oyaata mata udhav karanna puluvandha?',
+      expected: 'ඔයාට මට උදව් කරන්න පුලුවන්ද?',
+      category: 'Common requests',
+      grammar: 'Interrogative sentence',
       length: 'S'
     },
     {
       tcId: 'Pos_Fun_002',
-      name: 'Simple food request',
-      input: 'mata kiri oonee',
-      expected: 'මට කිරි ඕනෑ',
-      category: 'Daily language usage',
+      name: 'Casual greeting with slang',
+      input: 'good morning! hoDHAta exam liyanna.',
+      expected: 'good morning! හොඳට exam ලියන්න.',
+      category: 'greetings',
       grammar: 'Simple sentence',
       length: 'S'
     },
     {
       tcId: 'Pos_Fun_003',
-      name: 'Going home statement',
-      input: 'api gedhara yanavaa',
-      expected: 'අපි ගෙදර යනවා',
-      category: 'Daily language usage',
-      grammar: 'Simple sentence',
+      name: 'Urgent informal request',
+      input: 'oyaata puluvan ikmanata meeka confirm karanna',
+      expected: 'ඔයාට පුලුවන් ඉක්මනට මේක confirm කරන්න',
+      category: 'Informal language',
+      grammar: 'Imperative sentence',
       length: 'S'
     },
     
-    // Compound Sentences
     {
       tcId: 'Pos_Fun_004',
-      name: 'Two activities connected',
-      input: 'mama kaeema kannam saha passe naaginnam',
-      expected: 'මම කෑම කන්නම් සහ පස්සේ නාගින්නම්',
+      name: 'Short informational statement',
+      input: 'meeting eka @9 a.m.',
+      expected: 'meeting එක @9 a.m.',
       category: 'Daily language usage',
-      grammar: 'Compound sentence',
+      grammar: 'Simple sentence',
       length: 'S'
     },
     {
       tcId: 'Pos_Fun_005',
-      name: 'Weather condition compound',
-      input: 'vaessa yanavanam api yannee naee',
-      expected: 'වැස්ස යනවනම් අපි යන්නේ නෑ',
-      category: 'Daily language usage',
-      grammar: 'Compound sentence',
+      name: 'Emotional informal question',
+      input: 'ayiyoo... aeyi haemavelaavema mama',
+      expected: 'අයියෝ... ඇයි හැමවෙලාවෙම මම',
+      category: 'Informal language',
+      grammar: 'Interrogative sentence',
       length: 'S'
     },
     
-    // Complex Sentences
     {
       tcId: 'Pos_Fun_006',
-      name: 'Conditional complex sentence',
-      input: 'oyaa enavaanam mama innaanam kaeema laeesthi karannam',
-      expected: 'ඔයා එනවානම් මම ඉන්නානම් කෑම ලෑස්ති කරන්නම්',
-      category: 'Daily language usage',
-      grammar: 'Complex sentence',
-      length: 'M'
+      name: 'Direct command',
+      input: 'eeka dhaen evanna.',
+      expected: 'ඒක දැන් එවන්න.',
+      category: 'Commands',
+      grammar: 'Imperative sentence',
+      length: 'S'
     },
     
-    // Questions
+  
     {
       tcId: 'Pos_Fun_007',
-      name: 'Simple question about state',
-      input: 'oyaa kohedha innee',
-      expected: 'ඔයා කොහෙද ඉන්නේ',
-      category: 'Daily language usage',
-      grammar: 'Interrogative (question)',
+      name: 'Repeated-word emphasis',
+      input: 'yanna, yanna, yanna!',
+      expected: 'යන්න, යන්න, යන්න!',
+      category: 'Emphasis expressions',
+      grammar: 'Imperative sentence',
       length: 'S'
     },
     {
       tcId: 'Pos_Fun_008',
-      name: 'Question about time',
-      input: 'kavaddha enna yanne',
-      expected: 'කවද්ද එන්න යන්නේ',
-      category: 'Daily language usage',
-      grammar: 'Interrogative (question)',
+      name: 'Technical error message',
+      input: 'login eka asaarThakayi.',
+      expected: 'login එක අසාර්ථකයි.',
+      category: 'Technical language',
+      grammar: 'Simple sentence',
       length: 'S'
     },
+
     {
       tcId: 'Pos_Fun_009',
-      name: 'Polite question request',
-      input: 'oyaata mata eeka kiyanna puluvandha',
-      expected: 'ඔයාට මට ඒක කියන්න පුලුවන්ද',
-      category: 'Greeting / request / response',
-      grammar: 'Interrogative (question)',
+      name: 'Polite interrogative request',
+      input: 'oyaata meeka dhaen dhenna puluvandha?',
+      expected: 'ඔයාට මේක දැන් දෙන්න පුලුවන්ද?',
+      category: 'Common requests',
+      grammar: 'Interrogative sentence',
       length: 'S'
     },
     
-    // Commands
+    // Compound sentence
     {
       tcId: 'Pos_Fun_010',
-      name: 'Direct command',
-      input: 'laBa enna',
-      expected: 'ලඟ එන්න',
+      name: 'Compound sentence with contrast',
+      input: 'mama magee vaedee ivara kalaa. eeth hadhdhissiyeema magee laptop eka kaedunaa.',
+      expected: 'මම මගේ වැඩේ ඉවර කලා. ඒත් හද්දිස්සියේම මගේ laptop එක කැඩුනා.',
       category: 'Daily language usage',
-      grammar: 'Imperative (command)',
-      length: 'S'
+      grammar: 'Compound sentence',
+      length: 'M'
     },
     {
       tcId: 'Pos_Fun_011',
-      name: 'Polite command',
-      input: 'karuNaakaralaa poddak thissee balanna',
-      expected: 'කරුණාකරලා පොඩ්ඩක් තිස්සේ බලන්න',
-      category: 'Greeting / request / response',
-      grammar: 'Imperative (command)',
-      length: 'S'
+      name: 'Compound sentence with cause and result',
+      input: 'mata eLiyata yanna onee unaa, eeth vahinna patan gaththa nisaa mama gedhara hitiyaa.',
+      expected: 'මට එළියට යන්න ඔනේ උනා, ඒත් වහින්න පටන් ගත්ත නිසා මම ගෙදර හිටියා.',
+      category: 'Daily language usage',
+      grammar: 'Compound sentence',
+      length: 'M'
     },
     
-    // Greetings and Responses
     {
       tcId: 'Pos_Fun_012',
-      name: 'Morning greeting',
-      input: 'suba udhaeesanak',
-      expected: 'සුබ උදෑසනක්',
-      category: 'Greeting / request / response',
-      grammar: 'Simple sentence',
-      length: 'S'
+      name: 'Imperative with instruction',
+      input: 'mata file eka email karanna. whatsApp eken evanna epaa.',
+      expected: 'මට file එක email කරන්න. whatsApp එකෙන් එවන්න එපා.',
+      category: 'Requests and instructions',
+      grammar: 'Imperative sentence',
+      length: 'M'
     },
     {
       tcId: 'Pos_Fun_013',
-      name: 'Affirmative response',
-      input: 'ov hari',
-      expected: 'ඔව් hari',
-      category: 'Greeting / request / response',
-      grammar: 'Simple sentence',
-      length: 'S'
+      name: 'Compound sentence with result',
+      input: 'eyaa ee vaedee kalinma ivara kalaa. manager pudhuma unaa eeka dhaekalaa.',
+      expected: 'එයා ඒ වැඩේ කලින්ම ඉවර කලා. manager පුදුම උනා ඒක දැකලා.',
+      category: 'Workplace communication',
+      grammar: 'Compound sentence',
+      length: 'M'
     },
     
-    // Tense Variations
     {
       tcId: 'Pos_Fun_014',
       name: 'Past tense action',
